@@ -1,0 +1,20 @@
+//
+//  Consts.swift
+//  AdMobMCM
+//
+//  Created by ryokosuge on 2020/03/03.
+//  Copyright © 2020 fluct, inc. All rights reserved.
+//
+
+import Foundation
+
+class Consts {
+    class AdUnitID {
+        static var banner: String = "###BANNER_ADUNIT_ID###"
+        static var mediumRectangle: String = "###MEDIUM_RECTANGLE_ADUNIT_ID###"
+        static var largeBanner: String = "###LARGE_BANNER_ADUNIT_ID###"
+        static var adaptiveBanner: String = "###ADAPTIVE_BANNER_ADUNIT_ID###"
+        static var interstitial: String = "###INTERSTITIAL_ADUNIT_ID###"
+        static var rewardedVideo: String = "###REWARDED_VIDEO_ADUNIT_ID###"
+    }
+}
