@@ -1,16 +1,14 @@
 # AdMob check for iOS App
 
-AdMob MCM向けに簡単にAppIDとAdUnitID差し替えて確認できるやつ
-
 ## env
 
 | Xcode | Swift | Bundler | CocoaPods |
 |:---:|:---:|:---:|:---:|
-| 11.3.1 | 5.1 | 2.1.4 | 1.9.0 |
+| 11.4.1 | 5.2 | 2.1.4 | 1.9.0 |
 
 | Google Mobile Ads SDK | FluctSDK |
 |:---:|:---:|
-| 7.56.0 | 6.2.1 |
+| 7.57.0 | 6.4.1 |
 
 | 環境変数 | desc | 備考 |
 |:---:|:---:|:----|
