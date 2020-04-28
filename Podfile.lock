@@ -207,7 +207,7 @@ DEPENDENCIES:
   - GoogleMobileAdsMediationTestSuite
 
 SPEC REPOS:
-  https://cdn.cocoapods.org/:
+  trunk:
     - AdColony
     - AppLovinSDK
     - FluctSDK
