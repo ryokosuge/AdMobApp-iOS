@@ -1,58 +1,61 @@
 PODS:
-  - AdColony (4.1.4)
-  - AppLovinSDK (6.12.5)
-  - FluctSDK (6.5.0)
-  - FluctSDK-MediationAdapter (6.5.0):
-    - FluctSDK-MediationAdapter/AdColony (= 6.5.0)
-    - FluctSDK-MediationAdapter/AdCorsa (= 6.5.0)
-    - FluctSDK-MediationAdapter/AppLovin (= 6.5.0)
-    - FluctSDK-MediationAdapter/maio (= 6.5.0)
-    - FluctSDK-MediationAdapter/Mintegral (= 6.5.0)
-    - FluctSDK-MediationAdapter/nend (= 6.5.0)
-    - FluctSDK-MediationAdapter/Tapjoy (= 6.5.0)
-    - FluctSDK-MediationAdapter/UnityAds (= 6.5.0)
-  - FluctSDK-MediationAdapter/AdColony (6.5.0):
+  - AdColony (4.1.5)
+  - AppLovinSDK (6.12.8)
+  - FluctSDK (6.7.0)
+  - FluctSDK-MediationAdapter (6.7.0):
+    - FluctSDK-MediationAdapter/AdColony (= 6.7.0)
+    - FluctSDK-MediationAdapter/AdCorsa (= 6.7.0)
+    - FluctSDK-MediationAdapter/AppLovin (= 6.7.0)
+    - FluctSDK-MediationAdapter/Five (= 6.7.0)
+    - FluctSDK-MediationAdapter/maio (= 6.7.0)
+    - FluctSDK-MediationAdapter/Mintegral (= 6.7.0)
+    - FluctSDK-MediationAdapter/nend (= 6.7.0)
+    - FluctSDK-MediationAdapter/Tapjoy (= 6.7.0)
+    - FluctSDK-MediationAdapter/UnityAds (= 6.7.0)
+  - FluctSDK-MediationAdapter/AdColony (6.7.0):
     - AdColony
     - FluctSDK
-  - FluctSDK-MediationAdapter/AdCorsa (6.5.0):
+  - FluctSDK-MediationAdapter/AdCorsa (6.7.0):
     - FluctSDK
     - GlossomAds
-  - FluctSDK-MediationAdapter/AppLovin (6.5.0):
+  - FluctSDK-MediationAdapter/AppLovin (6.7.0):
     - AppLovinSDK
     - FluctSDK
-  - FluctSDK-MediationAdapter/maio (6.5.0):
+  - FluctSDK-MediationAdapter/Five (6.7.0):
+    - FluctSDK
+  - FluctSDK-MediationAdapter/maio (6.7.0):
     - FluctSDK
     - MaioSDK
-  - FluctSDK-MediationAdapter/Mintegral (6.5.0):
+  - FluctSDK-MediationAdapter/Mintegral (6.7.0):
     - FluctSDK
     - MintegralAdSDK/RewardVideoAd (>= 6.2.0)
-  - FluctSDK-MediationAdapter/nend (6.5.0):
+  - FluctSDK-MediationAdapter/nend (6.7.0):
     - FluctSDK
     - NendSDK_iOS
-  - FluctSDK-MediationAdapter/Tapjoy (6.5.0):
+  - FluctSDK-MediationAdapter/Tapjoy (6.7.0):
     - FluctSDK
     - TapjoySDK
-  - FluctSDK-MediationAdapter/UnityAds (6.5.0):
+  - FluctSDK-MediationAdapter/UnityAds (6.7.0):
     - FluctSDK
     - UnityAds
   - GlossomAds (2.1.1)
-  - Google-Mobile-Ads-SDK (7.59.0):
+  - Google-Mobile-Ads-SDK (7.60.0):
     - GoogleAppMeasurement (~> 6.0)
-  - GoogleAppMeasurement (6.5.0):
+  - GoogleAppMeasurement (6.6.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
     - GoogleUtilities/MethodSwizzler (~> 6.0)
     - GoogleUtilities/Network (~> 6.0)
     - "GoogleUtilities/NSData+zlib (~> 6.0)"
     - nanopb (~> 1.30905.0)
-  - GoogleMobileAdsMediationFluct (6.5.0):
+  - GoogleMobileAdsMediationFluct (6.7.0):
     - FluctSDK (>= 6.5.0)
     - Google-Mobile-Ads-SDK (>= 7.42.2)
-  - GoogleMobileAdsMediationTestSuite (1.2.0):
+  - GoogleMobileAdsMediationTestSuite (1.2.1):
     - Google-Mobile-Ads-SDK (>= 7.47.0)
-    - MaterialComponents/Cards (~> 103.0)
-    - MaterialComponents/Dialogs (~> 103.0)
-    - "MaterialComponents/Dialogs+DialogThemer (~> 103.0)"
-    - MaterialComponents/Tabs (~> 103.0)
+    - MaterialComponents/Cards (~> 109.0)
+    - MaterialComponents/Dialogs (~> 109.0)
+    - "MaterialComponents/Dialogs+Theming (~> 109.0)"
+    - MaterialComponents/Tabs (~> 109.0)
   - GoogleUtilities/AppDelegateSwizzler (6.6.0):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
@@ -70,35 +73,38 @@ PODS:
   - "GoogleUtilities/NSData+zlib (6.6.0)"
   - GoogleUtilities/Reachability (6.6.0):
     - GoogleUtilities/Logger
-  - MaioSDK (1.5.3)
-  - MaterialComponents/AnimationTiming (103.1.0)
-  - MaterialComponents/Buttons (103.1.0):
+  - MaioSDK (1.5.4)
+  - MaterialComponents/AnimationTiming (109.6.0)
+  - MaterialComponents/Availability (109.6.0)
+  - MaterialComponents/Buttons (109.6.0):
     - MaterialComponents/Elevation
     - MaterialComponents/Ink
     - MaterialComponents/private/Math
     - MaterialComponents/Ripple
     - MaterialComponents/ShadowElevations
     - MaterialComponents/ShadowLayer
+    - MaterialComponents/ShapeLibrary
     - MaterialComponents/Shapes
     - MaterialComponents/Typography
     - MDFInternationalization
     - MDFTextAccessibility
-  - "MaterialComponents/Buttons+ButtonThemer (103.1.0)":
+  - "MaterialComponents/Buttons+ColorThemer (109.6.0)":
+    - MaterialComponents/Buttons
+    - MaterialComponents/schemes/Color
+  - "MaterialComponents/Buttons+ShapeThemer (109.6.0)":
+    - MaterialComponents/Buttons
+    - MaterialComponents/schemes/Shape
+  - "MaterialComponents/Buttons+Theming (109.6.0)":
     - MaterialComponents/Buttons
     - "MaterialComponents/Buttons+ColorThemer"
     - "MaterialComponents/Buttons+ShapeThemer"
     - "MaterialComponents/Buttons+TypographyThemer"
-    - MaterialComponents/Palettes
-  - "MaterialComponents/Buttons+ColorThemer (103.1.0)":
-    - MaterialComponents/Buttons
-    - MaterialComponents/schemes/Color
-  - "MaterialComponents/Buttons+ShapeThemer (103.1.0)":
-    - MaterialComponents/Buttons
-    - MaterialComponents/schemes/Shape
-  - "MaterialComponents/Buttons+TypographyThemer (103.1.0)":
+    - MaterialComponents/schemes/Container
+    - MaterialComponents/ShadowElevations
+  - "MaterialComponents/Buttons+TypographyThemer (109.6.0)":
     - MaterialComponents/Buttons
     - MaterialComponents/schemes/Typography
-  - MaterialComponents/Cards (103.1.0):
+  - MaterialComponents/Cards (109.6.0):
     - MaterialComponents/Elevation
     - MaterialComponents/Ink
     - MaterialComponents/private/Icons/ic_check_circle
@@ -106,7 +112,7 @@ PODS:
     - MaterialComponents/Ripple
     - MaterialComponents/ShadowLayer
     - MaterialComponents/Shapes
-  - MaterialComponents/Dialogs (103.1.0):
+  - MaterialComponents/Dialogs (109.6.0):
     - MaterialComponents/Buttons
     - MaterialComponents/Elevation
     - MaterialComponents/private/KeyboardWatcher
@@ -115,60 +121,71 @@ PODS:
     - MaterialComponents/ShadowLayer
     - MaterialComponents/Typography
     - MDFInternationalization
-  - "MaterialComponents/Dialogs+ColorThemer (103.1.0)":
+  - "MaterialComponents/Dialogs+ColorThemer (109.6.0)":
     - "MaterialComponents/Buttons+ColorThemer"
     - MaterialComponents/Dialogs
     - MaterialComponents/Themes
-  - "MaterialComponents/Dialogs+DialogThemer (103.1.0)":
-    - "MaterialComponents/Buttons+ButtonThemer"
+  - "MaterialComponents/Dialogs+Theming (109.6.0)":
+    - "MaterialComponents/Buttons+Theming"
     - MaterialComponents/Dialogs
     - "MaterialComponents/Dialogs+ColorThemer"
     - "MaterialComponents/Dialogs+TypographyThemer"
-  - "MaterialComponents/Dialogs+TypographyThemer (103.1.0)":
+    - MaterialComponents/schemes/Container
+    - MaterialComponents/ShadowElevations
+  - "MaterialComponents/Dialogs+TypographyThemer (109.6.0)":
     - "MaterialComponents/Buttons+TypographyThemer"
     - MaterialComponents/Dialogs
     - MaterialComponents/schemes/Typography
-  - MaterialComponents/Elevation (103.1.0):
+  - MaterialComponents/Elevation (109.6.0):
+    - MaterialComponents/Availability
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
-  - MaterialComponents/Ink (103.1.0):
+  - MaterialComponents/Ink (109.6.0):
+    - MaterialComponents/Availability
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
-  - MaterialComponents/Palettes (103.1.0)
-  - MaterialComponents/private/Application (103.1.0)
-  - MaterialComponents/private/Color (103.1.0)
-  - MaterialComponents/private/Icons/Base (103.1.0)
-  - MaterialComponents/private/Icons/ic_check_circle (103.1.0):
+  - MaterialComponents/Palettes (109.6.0)
+  - MaterialComponents/private/Application (109.6.0)
+  - MaterialComponents/private/Color (109.6.0):
+    - MaterialComponents/Availability
+  - MaterialComponents/private/Icons/Base (109.6.0)
+  - MaterialComponents/private/Icons/ic_check_circle (109.6.0):
     - MaterialComponents/private/Icons/Base
-  - MaterialComponents/private/KeyboardWatcher (103.1.0):
+  - MaterialComponents/private/KeyboardWatcher (109.6.0):
     - MaterialComponents/private/Application
-  - MaterialComponents/private/Math (103.1.0)
-  - MaterialComponents/Ripple (103.1.0):
+  - MaterialComponents/private/Math (109.6.0)
+  - MaterialComponents/Ripple (109.6.0):
     - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
-  - MaterialComponents/schemes/Color (103.1.0):
+  - MaterialComponents/schemes/Color (109.6.0):
+    - MaterialComponents/Availability
     - MaterialComponents/private/Color
-  - MaterialComponents/schemes/Shape (103.1.0):
+  - MaterialComponents/schemes/Container (109.6.0):
+    - MaterialComponents/schemes/Color
+    - MaterialComponents/schemes/Shape
+    - MaterialComponents/schemes/Typography
+  - MaterialComponents/schemes/Shape (109.6.0):
     - MaterialComponents/ShapeLibrary
     - MaterialComponents/Shapes
-  - MaterialComponents/schemes/Typography (103.1.0):
+  - MaterialComponents/schemes/Typography (109.6.0):
     - "MaterialComponents/schemes/Typography+BasicFontScheme"
     - "MaterialComponents/schemes/Typography+Scheming"
     - MaterialComponents/Typography
-  - "MaterialComponents/schemes/Typography+BasicFontScheme (103.1.0)"
-  - "MaterialComponents/schemes/Typography+Scheming (103.1.0)"
-  - MaterialComponents/ShadowElevations (103.1.0)
-  - MaterialComponents/ShadowLayer (103.1.0):
+  - "MaterialComponents/schemes/Typography+BasicFontScheme (109.6.0)"
+  - "MaterialComponents/schemes/Typography+Scheming (109.6.0)"
+  - MaterialComponents/ShadowElevations (109.6.0)
+  - MaterialComponents/ShadowLayer (109.6.0):
     - MaterialComponents/ShadowElevations
-  - MaterialComponents/ShapeLibrary (103.1.0):
+  - MaterialComponents/ShapeLibrary (109.6.0):
     - MaterialComponents/private/Math
     - MaterialComponents/Shapes
-  - MaterialComponents/Shapes (103.1.0):
+  - MaterialComponents/Shapes (109.6.0):
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
     - MaterialComponents/ShadowLayer
-  - MaterialComponents/Tabs (103.1.0):
+  - MaterialComponents/Tabs (109.6.0):
     - MaterialComponents/AnimationTiming
     - MaterialComponents/Elevation
     - MaterialComponents/Ink
@@ -179,16 +196,16 @@ PODS:
     - MaterialComponents/ShadowLayer
     - MaterialComponents/Typography
     - MDFInternationalization
-  - MaterialComponents/Themes (103.1.0):
+  - MaterialComponents/Themes (109.6.0):
     - MaterialComponents/schemes/Color
     - MaterialComponents/schemes/Typography
-  - MaterialComponents/Typography (103.1.0):
+  - MaterialComponents/Typography (109.6.0):
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
   - MDFInternationalization (2.0.0)
   - MDFTextAccessibility (2.0.0)
-  - MintegralAdSDK/NativeAd (6.2.0.0)
-  - MintegralAdSDK/RewardVideoAd (6.2.0.0):
+  - MintegralAdSDK/NativeAd (6.3.2.0)
+  - MintegralAdSDK/RewardVideoAd (6.3.2.0):
     - MintegralAdSDK/NativeAd
   - nanopb (1.30905.0):
     - nanopb/decode (= 1.30905.0)
@@ -196,9 +213,9 @@ PODS:
   - nanopb/decode (1.30905.0)
   - nanopb/encode (1.30905.0)
   - NendSDK_iOS (5.4.1)
-  - PromisesObjC (1.2.8)
+  - PromisesObjC (1.2.9)
   - TapjoySDK (12.4.2)
-  - UnityAds (3.4.2)
+  - UnityAds (3.4.6)
 
 DEPENDENCIES:
   - FluctSDK-MediationAdapter
@@ -207,7 +224,7 @@ DEPENDENCIES:
   - GoogleMobileAdsMediationTestSuite
 
 SPEC REPOS:
-  trunk:
+  https://cdn.cocoapods.org/:
     - AdColony
     - AppLovinSDK
     - FluctSDK
@@ -230,26 +247,26 @@ SPEC REPOS:
     - UnityAds
 
 SPEC CHECKSUMS:
-  AdColony: fc02f429d6c4591567c7ae1426ebfcecb704b11f
-  AppLovinSDK: 931c17e0a3d63cf4d2881526217f22adf034c121
-  FluctSDK: 940c067d70aea582285fbd0f9ee365bb47eb7f6e
-  FluctSDK-MediationAdapter: 07fed0c256bb1c6c4a7dbddc7ca82de1f9b4bdb5
+  AdColony: 7d81ec360d5f14b2ab7569d482f6529a7c0bf457
+  AppLovinSDK: 0699feee7a8a3e55dc3a52e07d1b51cae0d27d56
+  FluctSDK: 78dae55716b4297083c9bbff811c8e7d79189738
+  FluctSDK-MediationAdapter: 70c2ac463ec01ccb281280893ff505981122809d
   GlossomAds: 392c295a54c528e3a6960f99b59be273c949831b
-  Google-Mobile-Ads-SDK: 118217ac8b80e28aabe0c00aedab1cd885857776
-  GoogleAppMeasurement: 4c644d86835d827bab30ab6aabb9ecaf1f500735
-  GoogleMobileAdsMediationFluct: cc866a733f5c69ae2976dab6e07e0b6f068e324a
-  GoogleMobileAdsMediationTestSuite: 422bd3f7f9e03a60d952c62405d0150d6319f785
+  Google-Mobile-Ads-SDK: d70efb31e7ea19fe99d466dc5d4788966b6914f8
+  GoogleAppMeasurement: 67458367830514fb20fd9e233496f1eef9d90185
+  GoogleMobileAdsMediationFluct: 1e8ae5fcbc815e3b0216d0e8ce7e814a60cc4db0
+  GoogleMobileAdsMediationTestSuite: 09b56ec48867bc9de0b0b131bf0e7f4a34fb9b5b
   GoogleUtilities: 39530bc0ad980530298e9c4af8549e991fd033b1
-  MaioSDK: 238fdcdd54ef8d45a1f02ac8b171ba5a037d976c
-  MaterialComponents: 0312a643d1aed5e5f10cba4be06a6aa62bd07c14
+  MaioSDK: f689c9d1e8e065947f903e75254770891b5cd6b6
+  MaterialComponents: 7c5a7d77fbe08aca9383fc97aeb7423b1fbce6b4
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
-  MintegralAdSDK: 038c5f82fa9312bbebea626282bf18f92037a50c
+  MintegralAdSDK: 9d87cf462c84b4bba2b92478f879bd515d9420bf
   nanopb: c43f40fadfe79e8b8db116583945847910cbabc9
   NendSDK_iOS: c0c22a467a3f17d2945d1fd7c245b416274d8129
-  PromisesObjC: c119f3cd559f50b7ae681fa59dc1acd19173b7e6
+  PromisesObjC: b48e0338dbbac2207e611750777895f7a5811b75
   TapjoySDK: c8d73f291cfe922cb8bb2c3ae09b5af0b2863841
-  UnityAds: db0da29fa3a7e519bceea56693909df0dd83caa5
+  UnityAds: 74c947800ab94551a12df87de852bcad44b152ab
 
 PODFILE CHECKSUM: 804dd336963a33700e2206e14d2a7880011a11d6
 
