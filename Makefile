@@ -11,7 +11,10 @@ REWARDED_VIDEO_ADUNIT_ID?=ca-app-pub-3010029359415397/9313948042
 
 .PHONY: vendor/bundle AdMobApp.xcworkspace AdMobApp/Info.plist AdMobApp/Consts.swift
 
-all: AdMobApp.xcworkspace AdMobApp/Info.plist AdMobApp/Consts.swift
+all: deps vendor/bundle AdMobApp.xcworkspace AdMobApp/Info.plist AdMobApp/Consts.swift
+
+deps:
+	gem install bundler:2.1.4
 
 vendor/bundle:
 	bundle install --path vendor/bundle
