@@ -1,4 +1,4 @@
-# Uncomment the next line to define a global platform for your project
+ Podfile# Uncomment the next line to define a global platform for your project
 platform :ios, '13.0'
 
 target 'AdMobApp' do
@@ -13,9 +13,12 @@ target 'AdMobApp' do
 
   ## MediationAdapter
   ### fluct
-  pod 'GoogleMobileAdsMediationFluct'
+  # pod 'GoogleMobileAdsMediationFluct'
 
   ## FluctSDK MediationAdapter
-  pod 'FluctSDK-MediationAdapter'
+  # pod 'FluctSDK-MediationAdapter'
+
+  ## GoogleMobileAdsMediationMoPub
+  pod 'GoogleMobileAdsMediationMoPub'
 
 end
