@@ -7,12 +7,12 @@
 //
 
 import UIKit
-import GoogleMobileAdsMediationTestSuite
+// import GoogleMobileAdsMediationTestSuite
 
 class MediationTestSuiteSegue: UIStoryboardSegue {
 
     override func perform() {
-        GoogleMobileAdsMediationTestSuite.present(on: source, delegate: nil)
+        // GoogleMobileAdsMediationTestSuite.present(on: source, delegate: nil)
     }
 
 }

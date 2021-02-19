@@ -106,32 +106,29 @@ extension BannerViewController {
 
 extension BannerViewController: GADBannerViewDelegate {
 
-    func adViewDidReceiveAd(_ bannerView: GADBannerView) {
+    func bannerViewDidReceiveAd(_ bannerView: GADBannerView) {
         print(#function, bannerView)
         adUnitIDLabel?.text = bannerView.adUnitID
     }
 
-    func adView(_ bannerView: GADBannerView, didFailToReceiveAdWithError error: GADRequestError) {
+    func bannerView(_ bannerView: GADBannerView, didFailToReceiveAdWithError error: Error) {
         print(#function, bannerView, error)
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {[weak self] in
-            self?.clearBanner()
-            self?.loadBanner()
-        }
+        adUnitIDLabel?.text = "Error:   \n\(error.localizedDescription)"
     }
 
-    func adViewWillPresentScreen(_ bannerView: GADBannerView) {
+    func bannerViewWillPresentScreen(_ bannerView: GADBannerView) {
         print(#function, bannerView)
     }
 
-    func adViewWillDismissScreen(_ bannerView: GADBannerView) {
+    func bannerViewWillDismissScreen(_ bannerView: GADBannerView) {
         print(#function, bannerView)
     }
 
-    func adViewDidDismissScreen(_ bannerView: GADBannerView) {
+    func bannerViewDidDismissScreen(_ bannerView: GADBannerView) {
         print(#function, bannerView)
     }
 
-    func adViewWillLeaveApplication(_ bannerView: GADBannerView) {
+    func bannerViewDidRecordImpression(_ bannerView: GADBannerView) {
         print(#function, bannerView)
     }
 

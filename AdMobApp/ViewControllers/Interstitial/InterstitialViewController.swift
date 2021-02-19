@@ -14,7 +14,7 @@ class InterstitialViewController: UIViewController {
     @IBOutlet weak var adUnitIDLabel: UILabel?
     @IBOutlet weak var showButton: UIButton?
     
-    private var interstitial: GADInterstitial?
+    private var interstitial: GADInterstitialAd?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,13 +28,21 @@ class InterstitialViewController: UIViewController {
 extension InterstitialViewController {
 
     @IBAction func loadAd(_ button: UIButton) {
-        interstitial = GADInterstitial(adUnitID: Consts.AdUnitID.interstitial)
-        interstitial?.delegate = self
-        interstitial?.load(GADRequest())
+        let request = GADRequest()
+        GADInterstitialAd.load(withAdUnitID: Consts.AdUnitID.interstitial, request: request) {[weak self] (ad, error) in
+            if let error = error {
+                print(#function, error)
+                self?.showButton?.isEnabled = false
+                return
+            }
+
+            self?.interstitial = ad
+            self?.interstitial?.fullScreenContentDelegate = self
+        }
     }
     
     @IBAction func showAd(_ button: UIButton) {
-        guard let interstitial = self.interstitial, interstitial.isReady else {
+        guard let interstitial = self.interstitial else {
             return
         }
 
@@ -43,39 +51,25 @@ extension InterstitialViewController {
 
 }
 
-extension InterstitialViewController: GADInterstitialDelegate {
+extension InterstitialViewController: GADFullScreenContentDelegate {
 
-    func interstitialDidReceiveAd(_ ad: GADInterstitial) {
+    func adDidPresentFullScreenContent(_ ad: GADFullScreenPresentingAd) {
         print(#function, ad)
-        adUnitIDLabel?.text = ad.adUnitID
-        showButton?.isEnabled = true
     }
-
-    func interstitial(_ ad: GADInterstitial, didFailToReceiveAdWithError error: GADRequestError) {
+    
+    func ad(_ ad: GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
         print(#function, ad, error)
-        showButton?.isEnabled = false
     }
 
-    func interstitialWillPresentScreen(_ ad: GADInterstitial) {
+    func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
         print(#function, ad)
-    }
-
-    func interstitialDidFail(toPresentScreen ad: GADInterstitial) {
-        print(#function, ad)
-    }
-
-    func interstitialWillLeaveApplication(_ ad: GADInterstitial) {
-        print(#function, ad)
-    }
-
-    func interstitialWillDismissScreen(_ ad: GADInterstitial) {
-        print(#function, ad)
-    }
-
-    func interstitialDidDismissScreen(_ ad: GADInterstitial) {
         print(#function, ad)
         showButton?.isEnabled = false
         adUnitIDLabel?.text = nil
+    }
+
+    func adDidRecordImpression(_ ad: GADFullScreenPresentingAd) {
+        print(#function, ad)
     }
 
 }

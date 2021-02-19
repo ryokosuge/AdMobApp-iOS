@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FXL-nd-e3E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FXL-nd-e3E">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--AdMob MCM-->
         <scene sceneID="gJ7-jg-ka9">
             <objects>
-                <tableViewController id="bOQ-kC-z3f" customClass="MainViewController" customModule="AdMobMCM" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="bOQ-kC-z3f" customClass="MainViewController" customModule="AdMobApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="pS7-jI-RsC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                         <sections>
                             <tableViewSection headerTitle="Ad Format" id="Di1-Rg-uNu">
                                 <cells>
@@ -99,7 +101,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="bOQ-kC-z3f" kind="custom" identifier="" customClass="MediationTestSuiteSegue" customModule="AdMobMCM" customModuleProvider="target" id="1yM-93-FC9"/>
+                                            <segue destination="bOQ-kC-z3f" kind="custom" identifier="" customClass="MediationTestSuiteSegue" customModule="AdMobApp" customModuleProvider="target" id="1yM-93-FC9"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="5fb-eM-84L" style="IBUITableViewCellStyleDefault" id="u8w-6z-e0w">
@@ -157,7 +159,7 @@
         <!--Rewarded Video-->
         <scene sceneID="zVK-3P-zbH">
             <objects>
-                <viewController id="NNb-DE-srd" customClass="RewardedVideoViewController" customModule="AdMobMCM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="NNb-DE-srd" customClass="RewardedVideoViewController" customModule="AdMobApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bXZ-Xy-3nD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -171,7 +173,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AdNetwork Class Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZ9-Ul-z2l">
                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="14.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ca---" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D70-mD-If8">
@@ -187,7 +189,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AdUnitID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Dp-mI-hHg">
                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="14.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ca---" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2QW-YE-caB">
@@ -202,7 +204,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Yd0-lO-8rY">
                                 <rect key="frame" x="16" y="391" width="382" height="114"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDh-A9-xT9">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDh-A9-xT9">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="53"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <inset key="contentEdgeInsets" minX="0.0" minY="16" maxX="0.0" maxY="16"/>
@@ -211,7 +213,7 @@
                                             <action selector="loadAd:" destination="NNb-DE-srd" eventType="touchUpInside" id="Q10-GD-ys1"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uw6-wT-sXg">
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uw6-wT-sXg">
                                         <rect key="frame" x="0.0" y="61" width="382" height="53"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <inset key="contentEdgeInsets" minX="0.0" minY="16" maxX="0.0" maxY="16"/>
@@ -223,7 +225,8 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="pFE-LT-wiD"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="pFE-LT-wiD" firstAttribute="trailing" secondItem="Yd0-lO-8rY" secondAttribute="trailing" constant="16" id="A2X-bQ-Uf4"/>
                             <constraint firstItem="F5n-dx-gef" firstAttribute="bottom" secondItem="pFE-LT-wiD" secondAttribute="bottom" id="FP3-bl-bdk"/>
@@ -232,7 +235,6 @@
                             <constraint firstItem="F5n-dx-gef" firstAttribute="leading" secondItem="pFE-LT-wiD" secondAttribute="leading" constant="16" id="cyq-dv-4MX"/>
                             <constraint firstItem="Yd0-lO-8rY" firstAttribute="leading" secondItem="pFE-LT-wiD" secondAttribute="leading" constant="16" id="mNk-Oz-Pcc"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="pFE-LT-wiD"/>
                     </view>
                     <navigationItem key="navigationItem" title="Rewarded Video" id="etT-4t-r7x"/>
                     <connections>
@@ -252,7 +254,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="XQe-L2-sM4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                         <sections>
                             <tableViewSection headerTitle="Ad Size" id="8nB-am-GHs">
                                 <cells>
@@ -273,7 +275,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="e7p-Iw-XgI" kind="show" identifier="320x50" customClass="BannerSegue" customModule="AdMobMCM" customModuleProvider="target" id="Ihc-6v-Qku"/>
+                                            <segue destination="e7p-Iw-XgI" kind="show" identifier="320x50" customClass="BannerSegue" customModule="AdMobApp" customModuleProvider="target" id="Ihc-6v-Qku"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="w5G-Nr-UjH" style="IBUITableViewCellStyleDefault" id="LVU-jH-1rA">
@@ -293,7 +295,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="e7p-Iw-XgI" kind="show" identifier="300x250" customClass="BannerSegue" customModule="AdMobMCM" customModuleProvider="target" id="ifd-3d-52m"/>
+                                            <segue destination="e7p-Iw-XgI" kind="show" identifier="300x250" customClass="BannerSegue" customModule="AdMobApp" customModuleProvider="target" id="ifd-3d-52m"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="0Ib-VZ-J6T" style="IBUITableViewCellStyleDefault" id="Td2-OE-Qon">
@@ -313,7 +315,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="e7p-Iw-XgI" kind="show" identifier="320x100" customClass="BannerSegue" customModule="AdMobMCM" customModuleProvider="target" id="RzQ-dN-6rW"/>
+                                            <segue destination="e7p-Iw-XgI" kind="show" identifier="320x100" customClass="BannerSegue" customModule="AdMobApp" customModuleProvider="target" id="RzQ-dN-6rW"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -333,7 +335,7 @@
         <!--Banner View Controller-->
         <scene sceneID="PsC-0F-vWa">
             <objects>
-                <viewController id="e7p-Iw-XgI" customClass="BannerViewController" customModule="AdMobMCM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="e7p-Iw-XgI" customClass="BannerViewController" customModule="AdMobApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qzr-dg-8my">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -344,7 +346,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AdUnitID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79p-eB-bPC">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="14.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ca---" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QmO-Oa-T0Q">
@@ -355,13 +357,13 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="3XG-2S-D2r"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="mWB-UX-lIl" firstAttribute="bottom" secondItem="3XG-2S-D2r" secondAttribute="bottom" id="Eaw-z0-Q6I"/>
                             <constraint firstItem="3XG-2S-D2r" firstAttribute="trailing" secondItem="mWB-UX-lIl" secondAttribute="trailing" constant="16" id="kQH-tf-LeC"/>
                             <constraint firstItem="mWB-UX-lIl" firstAttribute="leading" secondItem="3XG-2S-D2r" secondAttribute="leading" constant="16" id="oM2-tM-XTF"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="3XG-2S-D2r"/>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="qxc-PD-fJ6">
@@ -382,7 +384,7 @@
         <!--Interstitial-->
         <scene sceneID="iBh-Er-DVd">
             <objects>
-                <viewController id="cwy-rx-aeB" customClass="InterstitialViewController" customModule="AdMobMCM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cwy-rx-aeB" customClass="InterstitialViewController" customModule="AdMobApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LUu-W6-n48">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -393,7 +395,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AdUnitID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mft-VB-u1Z">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="14.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ca---" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5b-6C-Bkf">
@@ -406,7 +408,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="drd-rH-cvI">
                                 <rect key="frame" x="16" y="391" width="382" height="114"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GcQ-8Y-Pie">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GcQ-8Y-Pie">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="53"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <inset key="contentEdgeInsets" minX="0.0" minY="16" maxX="0.0" maxY="16"/>
@@ -415,7 +417,7 @@
                                             <action selector="loadAd:" destination="cwy-rx-aeB" eventType="touchUpInside" id="eUK-6h-nYo"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edl-0L-8Aa">
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edl-0L-8Aa">
                                         <rect key="frame" x="0.0" y="61" width="382" height="53"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <inset key="contentEdgeInsets" minX="0.0" minY="16" maxX="0.0" maxY="16"/>
@@ -427,7 +429,8 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="Y3C-qh-RXv"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="drd-rH-cvI" firstAttribute="centerY" secondItem="LUu-W6-n48" secondAttribute="centerY" id="8RU-g2-i8W"/>
                             <constraint firstItem="Y3C-qh-RXv" firstAttribute="trailing" secondItem="Z3C-FZ-AaI" secondAttribute="trailing" constant="16" id="9eU-t8-oeQ"/>
@@ -436,7 +439,6 @@
                             <constraint firstItem="Y3C-qh-RXv" firstAttribute="trailing" secondItem="drd-rH-cvI" secondAttribute="trailing" constant="16" id="NK3-Fb-Acw"/>
                             <constraint firstItem="Z3C-FZ-AaI" firstAttribute="leading" secondItem="Y3C-qh-RXv" secondAttribute="leading" constant="16" id="YoJ-OW-1Jv"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Y3C-qh-RXv"/>
                     </view>
                     <navigationItem key="navigationItem" title="Interstitial" id="6wY-3J-DQm"/>
                     <connections>
@@ -451,7 +453,7 @@
         <!--Adaptive Banner-->
         <scene sceneID="t30-KJ-6V4">
             <objects>
-                <viewController id="3Mp-FZ-lpy" customClass="AdaptiveBannerViewController" customModule="AdMobMCM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3Mp-FZ-lpy" customClass="AdaptiveBannerViewController" customModule="AdMobApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5C8-2f-03m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -462,7 +464,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AdUnitID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8f-WN-iNx">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="14.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="secondaryLabelColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ca---" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLj-9S-rOv">
@@ -473,13 +475,13 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="bmS-mE-6wH"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="bmS-mE-6wH" firstAttribute="bottom" secondItem="Rky-ub-rlz" secondAttribute="bottom" id="8vX-6D-jNr"/>
                             <constraint firstItem="bmS-mE-6wH" firstAttribute="trailing" secondItem="Rky-ub-rlz" secondAttribute="trailing" constant="16" id="skc-Cu-OFH"/>
                             <constraint firstItem="Rky-ub-rlz" firstAttribute="leading" secondItem="bmS-mE-6wH" secondAttribute="leading" constant="16" id="v5e-A8-11f"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="bmS-mE-6wH"/>
                     </view>
                     <navigationItem key="navigationItem" title="Adaptive Banner" id="fB2-wc-gTa">
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="GLT-qs-v4u">
@@ -500,5 +502,16 @@
     <inferredMetricsTieBreakers>
         <segue reference="RzQ-dN-6rW"/>
     </inferredMetricsTieBreakers>
-    <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <color key="tintColor" systemColor="systemRedColor"/>
+    <resources>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

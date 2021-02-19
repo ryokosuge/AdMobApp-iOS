@@ -11,12 +11,6 @@ PODS:
   - GoogleMobileAdsMediationMoPub (5.15.0.0):
     - Google-Mobile-Ads-SDK (>= 7.68.0)
     - mopub-ios-sdk (= 5.15.0)
-  - GoogleMobileAdsMediationTestSuite (1.4.0):
-    - Google-Mobile-Ads-SDK (>= 7.47.0)
-    - MaterialComponents/Cards (~> 119.0)
-    - MaterialComponents/Dialogs (~> 119.0)
-    - "MaterialComponents/Dialogs+Theming (~> 119.0)"
-    - MaterialComponents/Tabs (~> 119.0)
   - GoogleUserMessagingPlatform (1.4.0)
   - GoogleUtilities/AppDelegateSwizzler (7.2.2):
     - GoogleUtilities/Environment
@@ -35,137 +29,6 @@ PODS:
   - "GoogleUtilities/NSData+zlib (7.2.2)"
   - GoogleUtilities/Reachability (7.2.2):
     - GoogleUtilities/Logger
-  - MaterialComponents/AnimationTiming (119.5.0)
-  - MaterialComponents/Availability (119.5.0)
-  - MaterialComponents/Buttons (119.5.0):
-    - MaterialComponents/Elevation
-    - MaterialComponents/Ink
-    - MaterialComponents/private/Math
-    - MaterialComponents/Ripple
-    - MaterialComponents/ShadowElevations
-    - MaterialComponents/ShadowLayer
-    - MaterialComponents/ShapeLibrary
-    - MaterialComponents/Shapes
-    - MaterialComponents/Typography
-    - MDFInternationalization
-    - MDFTextAccessibility
-  - "MaterialComponents/Buttons+ColorThemer (119.5.0)":
-    - MaterialComponents/Buttons
-    - MaterialComponents/schemes/Color
-  - "MaterialComponents/Buttons+ShapeThemer (119.5.0)":
-    - MaterialComponents/Buttons
-    - MaterialComponents/schemes/Shape
-  - "MaterialComponents/Buttons+Theming (119.5.0)":
-    - MaterialComponents/Buttons
-    - "MaterialComponents/Buttons+ColorThemer"
-    - "MaterialComponents/Buttons+ShapeThemer"
-    - "MaterialComponents/Buttons+TypographyThemer"
-    - MaterialComponents/schemes/Container
-    - MaterialComponents/ShadowElevations
-  - "MaterialComponents/Buttons+TypographyThemer (119.5.0)":
-    - MaterialComponents/Buttons
-    - MaterialComponents/schemes/Typography
-  - MaterialComponents/Cards (119.5.0):
-    - MaterialComponents/Elevation
-    - MaterialComponents/Ink
-    - MaterialComponents/private/Icons/ic_check_circle
-    - MaterialComponents/private/Math
-    - MaterialComponents/Ripple
-    - MaterialComponents/ShadowLayer
-    - MaterialComponents/Shapes
-  - MaterialComponents/Dialogs (119.5.0):
-    - MaterialComponents/Buttons
-    - MaterialComponents/Elevation
-    - MaterialComponents/private/KeyboardWatcher
-    - MaterialComponents/private/Math
-    - MaterialComponents/ShadowElevations
-    - MaterialComponents/ShadowLayer
-    - MaterialComponents/Typography
-    - MDFInternationalization
-  - "MaterialComponents/Dialogs+ColorThemer (119.5.0)":
-    - "MaterialComponents/Buttons+ColorThemer"
-    - MaterialComponents/Dialogs
-    - MaterialComponents/Themes
-  - "MaterialComponents/Dialogs+Theming (119.5.0)":
-    - "MaterialComponents/Buttons+Theming"
-    - MaterialComponents/Dialogs
-    - "MaterialComponents/Dialogs+ColorThemer"
-    - "MaterialComponents/Dialogs+TypographyThemer"
-    - MaterialComponents/schemes/Container
-    - MaterialComponents/ShadowElevations
-  - "MaterialComponents/Dialogs+TypographyThemer (119.5.0)":
-    - "MaterialComponents/Buttons+TypographyThemer"
-    - MaterialComponents/Dialogs
-    - MaterialComponents/schemes/Typography
-  - MaterialComponents/Elevation (119.5.0):
-    - MaterialComponents/Availability
-    - MaterialComponents/private/Color
-    - MaterialComponents/private/Math
-  - MaterialComponents/Ink (119.5.0):
-    - MaterialComponents/Availability
-    - MaterialComponents/private/Color
-    - MaterialComponents/private/Math
-  - MaterialComponents/Palettes (119.5.0)
-  - MaterialComponents/private/Application (119.5.0)
-  - MaterialComponents/private/Color (119.5.0):
-    - MaterialComponents/Availability
-  - MaterialComponents/private/Icons/Base (119.5.0)
-  - MaterialComponents/private/Icons/ic_check_circle (119.5.0):
-    - MaterialComponents/private/Icons/Base
-  - MaterialComponents/private/KeyboardWatcher (119.5.0):
-    - MaterialComponents/private/Application
-  - MaterialComponents/private/Math (119.5.0)
-  - MaterialComponents/Ripple (119.5.0):
-    - MaterialComponents/AnimationTiming
-    - MaterialComponents/Availability
-    - MaterialComponents/private/Color
-    - MaterialComponents/private/Math
-  - MaterialComponents/schemes/Color (119.5.0):
-    - MaterialComponents/Availability
-    - MaterialComponents/private/Color
-  - MaterialComponents/schemes/Container (119.5.0):
-    - MaterialComponents/schemes/Color
-    - MaterialComponents/schemes/Shape
-    - MaterialComponents/schemes/Typography
-  - MaterialComponents/schemes/Shape (119.5.0):
-    - MaterialComponents/ShapeLibrary
-    - MaterialComponents/Shapes
-  - MaterialComponents/schemes/Typography (119.5.0):
-    - "MaterialComponents/schemes/Typography+BasicFontScheme"
-    - "MaterialComponents/schemes/Typography+Scheming"
-    - MaterialComponents/Typography
-  - "MaterialComponents/schemes/Typography+BasicFontScheme (119.5.0)"
-  - "MaterialComponents/schemes/Typography+Scheming (119.5.0)"
-  - MaterialComponents/ShadowElevations (119.5.0)
-  - MaterialComponents/ShadowLayer (119.5.0):
-    - MaterialComponents/ShadowElevations
-  - MaterialComponents/ShapeLibrary (119.5.0):
-    - MaterialComponents/private/Math
-    - MaterialComponents/Shapes
-  - MaterialComponents/Shapes (119.5.0):
-    - MaterialComponents/private/Color
-    - MaterialComponents/private/Math
-    - MaterialComponents/ShadowLayer
-  - MaterialComponents/Tabs (119.5.0):
-    - MaterialComponents/AnimationTiming
-    - MaterialComponents/Elevation
-    - MaterialComponents/Ink
-    - MaterialComponents/Palettes
-    - MaterialComponents/private/Math
-    - MaterialComponents/Ripple
-    - MaterialComponents/ShadowElevations
-    - MaterialComponents/ShadowLayer
-    - MaterialComponents/Typography
-    - MDFInternationalization
-  - MaterialComponents/Themes (119.5.0):
-    - MaterialComponents/schemes/Color
-    - MaterialComponents/schemes/Typography
-  - MaterialComponents/Typography (119.5.0):
-    - MaterialComponents/private/Application
-    - MaterialComponents/private/Math
-    - MDFTextAccessibility
-  - MDFInternationalization (2.0.0)
-  - MDFTextAccessibility (2.0.0)
   - mopub-ios-sdk (5.15.0):
     - mopub-ios-sdk/MoPubSDK (= 5.15.0)
   - mopub-ios-sdk/Core (5.15.0)
@@ -184,19 +47,14 @@ PODS:
 DEPENDENCIES:
   - Google-Mobile-Ads-SDK
   - GoogleMobileAdsMediationMoPub
-  - GoogleMobileAdsMediationTestSuite
 
 SPEC REPOS:
   trunk:
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
     - GoogleMobileAdsMediationMoPub
-    - GoogleMobileAdsMediationTestSuite
     - GoogleUserMessagingPlatform
     - GoogleUtilities
-    - MaterialComponents
-    - MDFInternationalization
-    - MDFTextAccessibility
     - mopub-ios-sdk
     - nanopb
     - PromisesObjC
@@ -205,16 +63,12 @@ SPEC CHECKSUMS:
   Google-Mobile-Ads-SDK: efb7fb74595668fbbe680f0d1c06f9a8ff694c7c
   GoogleAppMeasurement: c542a2feaac9ab98fd074e8f1a02c3585bbfbd47
   GoogleMobileAdsMediationMoPub: 5cfcbcaa6f5d488a63706c1f10c5a8ef08e71d1e
-  GoogleMobileAdsMediationTestSuite: a6611af7b6bf227c05fee84083f3a0f2f8e3c558
   GoogleUserMessagingPlatform: b168e8c46cd8f92aa3e34b584c4ca78a411ce367
   GoogleUtilities: 31c5b01f978a70c6cff2afc6272b3f1921614b43
-  MaterialComponents: 2cdc12c16528ed7e6f1d5bd6d6927c47f9f4e90f
-  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
-  MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
   mopub-ios-sdk: a21098174b9420a291aca9fcdae832d0f2e2a368
   nanopb: 59221d7f958fb711001e6a449489542d92ae113e
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
 
-PODFILE CHECKSUM: f978e9b8297c9464e719d182c83db86015452bcb
+PODFILE CHECKSUM: 1a09fb16f8590ba665a884da87a07d6e97f32435
 
 COCOAPODS: 1.10.1

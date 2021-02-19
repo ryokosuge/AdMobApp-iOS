@@ -8,7 +8,7 @@
 
 import UIKit
 import GoogleMobileAds
-import GoogleMobileAdsMediationFluct
+// import GoogleMobileAdsMediationFluct
 
 class RewardedVideoViewController: UIViewController {
 
@@ -33,53 +33,59 @@ extension RewardedVideoViewController {
     @IBAction func loadAd(_ button: UIButton) {
         showButton?.isEnabled = false
 
-        rewardedAd = GADRewardedAd(adUnitID: Consts.AdUnitID.rewardedVideo)
-        let extra = GADMAdapterFluctExtras()
-        extra.setting = FSSRewardedVideoSetting.default
-        extra.setting?.isDebugMode = true
+        // let extra = GADMAdapterFluctExtras()
+        // extra.setting = FSSRewardedVideoSetting.default
+        // extra.setting?.isDebugMode = true
         let request = GADRequest()
-        request.register(extra)
-        rewardedAd?.load(request) {[weak self] (error) in
+        // request.register(extra)
+
+        GADRewardedAd.load(withAdUnitID: Consts.AdUnitID.rewardedVideo, request: request) {[weak self] (ad, error) in
             if let error = error {
                 print(error)
                 return
             }
 
-            self?.adUnitIDLabel?.text = self?.rewardedAd?.adUnitID
+            self?.rewardedAd = ad
+            self?.rewardedAd?.fullScreenContentDelegate = self
+            
+            self?.adUnitIDLabel?.text = ad?.adUnitID
+            self?.adNetworkClassNameLabel?.text = ad?.responseInfo.adNetworkClassName
             self?.showButton?.isEnabled = true
-            self?.adNetworkClassNameLabel?.text = self?.rewardedAd?.responseInfo?.adNetworkClassName
         }
+
     }
 
     @IBAction func showAd(_ button: UIButton) {
-        guard let rewardedAd = self.rewardedAd, rewardedAd.isReady else {
+        guard let rewardedAd = self.rewardedAd else {
             return
         }
 
-        rewardedAd.present(fromRootViewController: self, delegate: self)
+        rewardedAd.present(fromRootViewController: self) {[rewardedAd] in
+            print(#function, rewardedAd, rewardedAd.adReward)
+        }
     }
 
 }
 
-extension RewardedVideoViewController: GADRewardedAdDelegate {
+extension RewardedVideoViewController: GADFullScreenContentDelegate {
 
-    func rewardedAd(_ rewardedAd: GADRewardedAd, userDidEarn reward: GADAdReward) {
-        print(#function, rewardedAd, reward)
+    func adDidPresentFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+        print(#function, ad)
+    }
+    
+    func ad(_ ad: GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
+        print(#function, ad, error)
     }
 
-    func rewardedAd(_ rewardedAd: GADRewardedAd, didFailToPresentWithError error: Error) {
-        print(#function, rewardedAd, error)
-    }
-
-    func rewardedAdDidPresent(_ rewardedAd: GADRewardedAd) {
-        print(#function, rewardedAd)
-    }
-
-    func rewardedAdDidDismiss(_ rewardedAd: GADRewardedAd) {
-        print(#function, rewardedAd)
-        adUnitIDLabel?.text = nil
-        adNetworkClassNameLabel?.text = nil
+    func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+        print(#function, ad)
         showButton?.isEnabled = false
+        adNetworkClassNameLabel?.text = nil
+        adUnitIDLabel?.text = nil
+    }
+
+    func adDidRecordImpression(_ ad: GADFullScreenPresentingAd) {
+        print(#function, ad)
     }
 
 }
