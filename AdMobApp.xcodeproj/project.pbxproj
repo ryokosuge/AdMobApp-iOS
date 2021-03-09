@@ -162,6 +162,7 @@
 				75D44B1C240E595E00319543 /* Frameworks */,
 				75D44B1D240E595E00319543 /* Resources */,
 				DC1DB2AE45E328F27FD7CFB4 /* [CP] Embed Pods Frameworks */,
+				F6F7D714898AED5D3E4C30E8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +257,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdMobApp/Pods-AdMobApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6F7D714898AED5D3E4C30E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdMobApp/Pods-AdMobApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AdMobApp/Pods-AdMobApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AdMobApp/Pods-AdMobApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

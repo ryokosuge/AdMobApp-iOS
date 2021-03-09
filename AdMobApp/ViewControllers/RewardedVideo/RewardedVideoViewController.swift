@@ -8,7 +8,7 @@
 
 import UIKit
 import GoogleMobileAds
-// import GoogleMobileAdsMediationFluct
+import GoogleMobileAdsMediationFluct
 
 class RewardedVideoViewController: UIViewController {
 
@@ -33,11 +33,11 @@ extension RewardedVideoViewController {
     @IBAction func loadAd(_ button: UIButton) {
         showButton?.isEnabled = false
 
-        // let extra = GADMAdapterFluctExtras()
-        // extra.setting = FSSRewardedVideoSetting.default
-        // extra.setting?.isDebugMode = true
+        let extra = GADMAdapterFluctExtras()
+        extra.setting = FSSRewardedVideoSetting.default
+        extra.setting?.isDebugMode = true
         let request = GADRequest()
-        // request.register(extra)
+        request.register(extra)
 
         GADRewardedAd.load(withAdUnitID: Consts.AdUnitID.rewardedVideo, request: request) {[weak self] (ad, error) in
             if let error = error {

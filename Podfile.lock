@@ -1,4 +1,40 @@
 PODS:
+  - AdColony (4.5.0)
+  - AppLovinSDK (6.15.2)
+  - FluctSDK (6.13.0)
+  - FluctSDK-MediationAdapter (6.13.0):
+    - FluctSDK-MediationAdapter/AdColony (= 6.13.0)
+    - FluctSDK-MediationAdapter/AdCorsa (= 6.13.0)
+    - FluctSDK-MediationAdapter/AppLovin (= 6.13.0)
+    - FluctSDK-MediationAdapter/Five (= 6.13.0)
+    - FluctSDK-MediationAdapter/maio (= 6.13.0)
+    - FluctSDK-MediationAdapter/nend (= 6.13.0)
+    - FluctSDK-MediationAdapter/Tapjoy (= 6.13.0)
+    - FluctSDK-MediationAdapter/UnityAds (= 6.13.0)
+  - FluctSDK-MediationAdapter/AdColony (6.13.0):
+    - AdColony (>= 4.3.1)
+    - FluctSDK (>= 6.12.4)
+  - FluctSDK-MediationAdapter/AdCorsa (6.13.0):
+    - FluctSDK (>= 6.12.4)
+    - GlossomAds (>= 2.2.2)
+  - FluctSDK-MediationAdapter/AppLovin (6.13.0):
+    - AppLovinSDK (>= 6.14.2)
+    - FluctSDK (>= 6.12.4)
+  - FluctSDK-MediationAdapter/Five (6.13.0):
+    - FluctSDK (>= 6.12.4)
+  - FluctSDK-MediationAdapter/maio (6.13.0):
+    - FluctSDK (>= 6.12.4)
+    - MaioSDK (>= 1.5.5)
+  - FluctSDK-MediationAdapter/nend (6.13.0):
+    - FluctSDK (>= 6.12.4)
+    - NendSDK_iOS (= 7.0.0)
+  - FluctSDK-MediationAdapter/Tapjoy (6.13.0):
+    - FluctSDK (>= 6.12.4)
+    - TapjoySDK (>= 12.7.0)
+  - FluctSDK-MediationAdapter/UnityAds (6.13.0):
+    - FluctSDK (>= 6.12.4)
+    - UnityAds (>= 3.5.1)
+  - GlossomAds (2.2.2)
   - Google-Mobile-Ads-SDK (8.1.0):
     - GoogleAppMeasurement (~> 7.0)
     - GoogleUserMessagingPlatform (~> 1.1)
@@ -8,9 +44,12 @@ PODS:
     - GoogleUtilities/Network (~> 7.0)
     - "GoogleUtilities/NSData+zlib (~> 7.0)"
     - nanopb (~> 2.30907.0)
-  - GoogleMobileAdsMediationMoPub (5.16.0.0):
+  - GoogleMobileAdsMediationFluct (6.13.0):
+    - FluctSDK (>= 6.12.1)
     - Google-Mobile-Ads-SDK (>= 8.1.0)
-    - mopub-ios-sdk (= 5.16.0)
+  - GoogleMobileAdsMediationMoPub (5.16.1.0):
+    - Google-Mobile-Ads-SDK (>= 8.1.0)
+    - mopub-ios-sdk (= 5.16.1)
   - GoogleUserMessagingPlatform (1.4.0)
   - GoogleUtilities/AppDelegateSwizzler (7.2.2):
     - GoogleUtilities/Environment
@@ -29,46 +68,72 @@ PODS:
   - "GoogleUtilities/NSData+zlib (7.2.2)"
   - GoogleUtilities/Reachability (7.2.2):
     - GoogleUtilities/Logger
-  - mopub-ios-sdk (5.16.0):
-    - mopub-ios-sdk/MoPubSDK (= 5.16.0)
-  - mopub-ios-sdk/Core (5.16.0)
-  - mopub-ios-sdk/MoPubSDK (5.16.0):
+  - MaioSDK (1.5.6)
+  - mopub-ios-sdk (5.16.1):
+    - mopub-ios-sdk/MoPubSDK (= 5.16.1)
+  - mopub-ios-sdk/Core (5.16.1)
+  - mopub-ios-sdk/MoPubSDK (5.16.1):
     - mopub-ios-sdk/Core
     - mopub-ios-sdk/NativeAds
-  - mopub-ios-sdk/NativeAds (5.16.0):
+  - mopub-ios-sdk/NativeAds (5.16.1):
     - mopub-ios-sdk/Core
   - nanopb (2.30907.0):
     - nanopb/decode (= 2.30907.0)
     - nanopb/encode (= 2.30907.0)
   - nanopb/decode (2.30907.0)
   - nanopb/encode (2.30907.0)
+  - NendSDK_iOS (7.0.0)
   - PromisesObjC (1.2.12)
+  - TapjoySDK (12.7.1)
+  - UnityAds (3.6.0)
 
 DEPENDENCIES:
+  - FluctSDK-MediationAdapter (= 6.13.0)
   - Google-Mobile-Ads-SDK
+  - GoogleMobileAdsMediationFluct (= 6.13.0)
   - GoogleMobileAdsMediationMoPub
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs:
+    - AdColony
+    - AppLovinSDK
+    - FluctSDK
+    - FluctSDK-MediationAdapter
+    - GlossomAds
     - Google-Mobile-Ads-SDK
     - GoogleAppMeasurement
+    - GoogleMobileAdsMediationFluct
     - GoogleMobileAdsMediationMoPub
     - GoogleUserMessagingPlatform
     - GoogleUtilities
+    - MaioSDK
     - mopub-ios-sdk
     - nanopb
+    - NendSDK_iOS
     - PromisesObjC
+    - TapjoySDK
+    - UnityAds
 
 SPEC CHECKSUMS:
+  AdColony: e54ee1d060491410135a5a1c9b010bcb4a171dab
+  AppLovinSDK: fc91aca5b6b529cae7181a43f63633363dddbe3b
+  FluctSDK: ab0d0872b9f353b0e8a11aebea8c6460052f0280
+  FluctSDK-MediationAdapter: 40dcc3a19a2af4e55496292b1e610ec2ad482eba
+  GlossomAds: 1ad4c13430448da5d8acaa2f0595c1189f3af824
   Google-Mobile-Ads-SDK: efb7fb74595668fbbe680f0d1c06f9a8ff694c7c
   GoogleAppMeasurement: 0c3b134b2c0a90c4c24833873894bfe0e42a0384
-  GoogleMobileAdsMediationMoPub: 3cb2532abae31a07c8021f1b934ac44de838422b
+  GoogleMobileAdsMediationFluct: cacffcb895962c3296c3907137a11639dc2c12c3
+  GoogleMobileAdsMediationMoPub: 09814e48a60c8884978d17befc6cdf7dc8b3ca2d
   GoogleUserMessagingPlatform: b168e8c46cd8f92aa3e34b584c4ca78a411ce367
   GoogleUtilities: 31c5b01f978a70c6cff2afc6272b3f1921614b43
-  mopub-ios-sdk: 036777d448e52add075ab4b7584d5af9bbaada55
+  MaioSDK: 5a93c2209c02c4a8bddfd5da4c9a1f900bd60573
+  mopub-ios-sdk: d207b434e6aef9c2f57423512e5eda1edf82930f
   nanopb: 59221d7f958fb711001e6a449489542d92ae113e
+  NendSDK_iOS: 5f4d2574d19aece3ebf8ef1833ece0c4af48da23
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
+  TapjoySDK: 27e4116ba377dcbe064743ca3ec3a8d70ccee2bb
+  UnityAds: 3f88cf3d3b11991de1025fcf0e3109fd86035fba
 
-PODFILE CHECKSUM: a8fdca9e138a30ba99f32c36b32aead3e4a8701d
+PODFILE CHECKSUM: c7c71386a3dd24438938f58091d9647652beaee9
 
 COCOAPODS: 1.10.1

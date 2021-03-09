@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--AdMob MCM-->
+        <!--AdMob-->
         <scene sceneID="gJ7-jg-ka9">
             <objects>
                 <tableViewController id="bOQ-kC-z3f" customClass="MainViewController" customModule="AdMobApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -132,7 +132,7 @@
                             <outlet property="delegate" destination="bOQ-kC-z3f" id="WER-Pe-x8c"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="AdMob MCM" id="f9S-uI-WGb"/>
+                    <navigationItem key="navigationItem" title="AdMob" id="f9S-uI-WGb"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3fb-Bg-4fV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
