@@ -1,6 +1,6 @@
 //
 //  Consts.swift
-//  AdMobMCM
+//  AdMobApp
 //
 //  Created by ryokosuge on 2020/03/03.
 //  Copyright © 2020 fluct, inc. All rights reserved.
@@ -16,5 +16,6 @@ class Consts {
         static var adaptiveBanner: String = "ca-app-pub-3010029359415397/8384009756"
         static var interstitial: String = "ca-app-pub-3010029359415397/8192438063"
         static var rewardedVideo: String = "ca-app-pub-3010029359415397/9313948042"
+        static var rewardedInterstitial: String = "ca-app-pub-3940256099942544/6978759866"
     }
 }

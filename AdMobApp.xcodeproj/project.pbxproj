@@ -19,6 +19,7 @@
 		75D44B39240E5C6B00319543 /* BannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D44B38240E5C6B00319543 /* BannerViewController.swift */; };
 		75D44B3B240E5CF000319543 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D44B3A240E5CF000319543 /* Consts.swift */; };
 		924A1AFBAEE46D466FF954E1 /* Pods_AdMobApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71F82FD8F227C8B019B8D484 /* Pods_AdMobApp.framework */; };
+		DAEFFF0A2602E72900145ABF /* RewardedInterstitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEFFF092602E72900145ABF /* RewardedInterstitialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		75D44B38240E5C6B00319543 /* BannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerViewController.swift; sourceTree = "<group>"; };
 		75D44B3A240E5CF000319543 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 		7E352B9424D05D3FEA5AC292 /* Pods-AdMobApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdMobApp.release.xcconfig"; path = "Target Support Files/Pods-AdMobApp/Pods-AdMobApp.release.xcconfig"; sourceTree = "<group>"; };
+		DAEFFF092602E72900145ABF /* RewardedInterstitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardedInterstitialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		75D44B36240E5C4E00319543 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				DAEFFF072602E70700145ABF /* RewardedInterstitial */,
 				752D33D8240F51320007B63C /* Interstitial */,
 				752D33D5240F4E580007B63C /* RewardedVideo */,
 				75D44B37240E5C5300319543 /* Banner */,
@@ -140,6 +143,14 @@
 				7E352B9424D05D3FEA5AC292 /* Pods-AdMobApp.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		DAEFFF072602E70700145ABF /* RewardedInterstitial */ = {
+			isa = PBXGroup;
+			children = (
+				DAEFFF092602E72900145ABF /* RewardedInterstitialViewController.swift */,
+			);
+			path = RewardedInterstitial;
 			sourceTree = "<group>";
 		};
 		F121655E9BE9CFDB0E5A07DF /* Frameworks */ = {
@@ -291,6 +302,7 @@
 				75D44B39240E5C6B00319543 /* BannerViewController.swift in Sources */,
 				75D44B25240E595E00319543 /* SceneDelegate.swift in Sources */,
 				752D33DF240F748E0007B63C /* MediationTestSuiteSegue.swift in Sources */,
+				DAEFFF0A2602E72900145ABF /* RewardedInterstitialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

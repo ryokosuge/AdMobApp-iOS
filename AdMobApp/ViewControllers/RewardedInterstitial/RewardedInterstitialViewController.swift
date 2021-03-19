@@ -1,22 +1,22 @@
 //
-//  RewardedVideoViewController.swift
+//  RewardedInterstitialViewController.swift
 //  AdMobApp
 //
-//  Created by ryokosuge on 2020/03/04.
-//  Copyright © 2020 fluct, inc. All rights reserved.
+//  Created by ryokosuge on 2021/03/18.
+//  Copyright © 2021 fluct, inc. All rights reserved.
 //
 
 import UIKit
 import GoogleMobileAds
 import GoogleMobileAdsMediationFluct
 
-class RewardedVideoViewController: UIViewController {
+class RewardedInterstitialViewController: UIViewController {
 
     @IBOutlet weak var adNetworkClassNameLabel: UILabel?
     @IBOutlet weak var adUnitIDLabel: UILabel?
     @IBOutlet weak var showButton: UIButton?
 
-    private var rewardedAd: GADRewardedAd?
+    private var rewardedInterstitialAd: GADRewardedInterstitialAd?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,7 @@ class RewardedVideoViewController: UIViewController {
 
 }
 
-extension RewardedVideoViewController {
+extension RewardedInterstitialViewController {
 
     @IBAction func loadAd(_ button: UIButton) {
         showButton?.isEnabled = false
@@ -39,15 +39,15 @@ extension RewardedVideoViewController {
         let request = GADRequest()
         request.register(extra)
 
-        GADRewardedAd.load(withAdUnitID: Consts.AdUnitID.rewardedVideo, request: request) {[weak self] (ad, error) in
+        GADRewardedInterstitialAd.load(withAdUnitID: Consts.AdUnitID.rewardedInterstitial, request: request) {[weak self] (ad, error) in
             if let error = error {
                 print(error)
                 return
             }
 
-            self?.rewardedAd = ad
-            self?.rewardedAd?.fullScreenContentDelegate = self
-            
+            self?.rewardedInterstitialAd = ad
+            self?.rewardedInterstitialAd?.fullScreenContentDelegate = self
+
             self?.adUnitIDLabel?.text = ad?.adUnitID
             self?.adNetworkClassNameLabel?.text = ad?.responseInfo.adNetworkClassName
             self?.showButton?.isEnabled = true
@@ -56,18 +56,18 @@ extension RewardedVideoViewController {
     }
 
     @IBAction func showAd(_ button: UIButton) {
-        guard let rewardedAd = self.rewardedAd else {
+        guard let rewardedInterstitialAd = self.rewardedInterstitialAd else {
             return
         }
 
-        rewardedAd.present(fromRootViewController: self) {[rewardedAd] in
-            print(#function, rewardedAd, rewardedAd.adReward)
+        rewardedInterstitialAd.present(fromRootViewController: self) {[rewardedInterstitialAd] in
+            print(#function, rewardedInterstitialAd, rewardedInterstitialAd.adReward)
         }
     }
 
 }
 
-extension RewardedVideoViewController: GADFullScreenContentDelegate {
+extension RewardedInterstitialViewController: GADFullScreenContentDelegate {
 
     func adDidPresentFullScreenContent(_ ad: GADFullScreenPresentingAd) {
         print(#function, ad)

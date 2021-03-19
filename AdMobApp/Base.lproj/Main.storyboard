@@ -80,12 +80,49 @@
                                             <segue destination="NNb-DE-srd" kind="show" id="suu-oK-PyG"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="sG3-qK-43v" style="IBUITableViewCellStyleDefault" id="DEb-Pf-zps">
+                                        <rect key="frame" x="0.0" y="186" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DEb-Pf-zps" id="kZu-6B-YDU">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Rewarded Interstitial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sG3-qK-43v">
+                                                    <rect key="frame" x="20" y="0.0" width="355" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ldJ-LE-uW5" kind="show" id="9FY-6e-5RM"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="aGR-W1-bRN" style="IBUITableViewCellStyleDefault" id="kvE-cS-Z5F">
+                                        <rect key="frame" x="0.0" y="229.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kvE-cS-Z5F" id="wrk-Cc-qPJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="AppOpenAds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aGR-W1-bRN">
+                                                    <rect key="frame" x="20" y="0.0" width="355" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="AdMob" id="paM-xl-7we">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="XzI-c9-7HY" style="IBUITableViewCellStyleDefault" id="XWw-9X-lTy">
-                                        <rect key="frame" x="0.0" y="242" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="329" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XWw-9X-lTy" id="06e-3J-17r">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -105,7 +142,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="5fb-eM-84L" style="IBUITableViewCellStyleDefault" id="u8w-6z-e0w">
-                                        <rect key="frame" x="0.0" y="285.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="372.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u8w-6z-e0w" id="t5Z-aL-Spg">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -497,6 +534,97 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KUA-sO-8GT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="984" y="846"/>
+        </scene>
+        <!--Rewarded Interstitial-->
+        <scene sceneID="SkJ-JI-wYs">
+            <objects>
+                <viewController id="ldJ-LE-uW5" customClass="RewardedInterstitialViewController" customModule="AdMobApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZhL-Xz-haH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="muk-I4-eon">
+                                <rect key="frame" x="16" y="776" width="382" height="86"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="VEa-4y-vN7">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="39"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AdNetwork Class Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8b-B2-xmc">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ca---" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IeK-XS-xFf">
+                                                <rect key="frame" x="0.0" y="18.5" width="382" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Duh-Cj-GUD">
+                                        <rect key="frame" x="0.0" y="47" width="382" height="39"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AdUnitID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ces-wr-bVn">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="14.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ca---" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eha-hq-xNc">
+                                                <rect key="frame" x="0.0" y="18.5" width="382" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TPh-lR-OCH">
+                                <rect key="frame" x="16" y="391" width="382" height="114"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCk-HI-knl">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="53"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="16" maxX="0.0" maxY="16"/>
+                                        <state key="normal" title="Load"/>
+                                        <connections>
+                                            <action selector="loadAd:" destination="ldJ-LE-uW5" eventType="touchUpInside" id="Zvc-dk-sB7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyx-CC-ayJ">
+                                        <rect key="frame" x="0.0" y="61" width="382" height="53"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="16" maxX="0.0" maxY="16"/>
+                                        <state key="normal" title="Show"/>
+                                        <connections>
+                                            <action selector="showAd:" destination="ldJ-LE-uW5" eventType="touchUpInside" id="RX6-Dh-aLF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Chx-sE-SLM"/>
+                        <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="muk-I4-eon" firstAttribute="bottom" secondItem="Chx-sE-SLM" secondAttribute="bottom" id="D3N-QT-8vB"/>
+                            <constraint firstItem="Chx-sE-SLM" firstAttribute="trailing" secondItem="muk-I4-eon" secondAttribute="trailing" constant="16" id="HjJ-9e-bM6"/>
+                            <constraint firstItem="TPh-lR-OCH" firstAttribute="centerY" secondItem="ZhL-Xz-haH" secondAttribute="centerY" id="SNf-no-mfp"/>
+                            <constraint firstItem="muk-I4-eon" firstAttribute="leading" secondItem="Chx-sE-SLM" secondAttribute="leading" constant="16" id="g6o-w7-OEt"/>
+                            <constraint firstItem="TPh-lR-OCH" firstAttribute="leading" secondItem="Chx-sE-SLM" secondAttribute="leading" constant="16" id="ijT-ZD-qVi"/>
+                            <constraint firstItem="Chx-sE-SLM" firstAttribute="trailing" secondItem="TPh-lR-OCH" secondAttribute="trailing" constant="16" id="zaV-9F-71h"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Rewarded Interstitial" id="dZi-ux-N6H"/>
+                    <connections>
+                        <outlet property="adNetworkClassNameLabel" destination="IeK-XS-xFf" id="WOw-ct-zG4"/>
+                        <outlet property="adUnitIDLabel" destination="eha-hq-xNc" id="WIj-tP-rRv"/>
+                        <outlet property="showButton" destination="dyx-CC-ayJ" id="rin-5t-4KG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qby-6S-kcD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2851" y="-569"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
