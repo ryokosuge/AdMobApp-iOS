@@ -18,7 +18,7 @@ target 'AdMobApp' do
   pod 'GoogleMobileAdsMediationFluct', '6.13.0'
 
   ## FluctSDK MediationAdapter
-  pod 'FluctSDK-MediationAdapter', '6.13.0'
+  pod 'FluctSDK-MediationAdapter', '6.13.4'
 
   ## GoogleMobileAdsMediationMoPub
   pod 'GoogleMobileAdsMediationMoPub'
