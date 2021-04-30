@@ -12,15 +12,7 @@ target 'AdMobApp' do
   pod 'Google-Mobile-Ads-SDK'
   # v8に対応してないので
   # pod 'GoogleMobileAdsMediationTestSuite'
-
-  ## MediationAdapter
-  ### fluct
-  pod 'GoogleMobileAdsMediationFluct', '6.13.0'
-
-  ## FluctSDK MediationAdapter
-  pod 'FluctSDK-MediationAdapter', '6.13.0'
-
-  ## GoogleMobileAdsMediationMoPub
+  pod 'GoogleMobileAdsMediationFluct'
   pod 'GoogleMobileAdsMediationMoPub'
 
 end

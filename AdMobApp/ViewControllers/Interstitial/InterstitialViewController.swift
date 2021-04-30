@@ -28,6 +28,7 @@ class InterstitialViewController: UIViewController {
 extension InterstitialViewController {
 
     @IBAction func loadAd(_ button: UIButton) {
+        print(#function)
         let request = GADRequest()
         GADInterstitialAd.load(withAdUnitID: Consts.AdUnitID.interstitial, request: request) {[weak self] (ad, error) in
             if let error = error {
@@ -38,6 +39,7 @@ extension InterstitialViewController {
 
             self?.interstitial = ad
             self?.interstitial?.fullScreenContentDelegate = self
+            self?.showButton?.isEnabled = true
         }
     }
     
