@@ -1,27 +1,27 @@
 PODS:
-  - FluctSDK (6.13.4)
-  - Google-Mobile-Ads-SDK (8.5.0):
+  - FluctSDK (6.13.8)
+  - Google-Mobile-Ads-SDK (8.6.0):
     - GoogleAppMeasurement (< 9.0, >= 7.0)
     - GoogleUserMessagingPlatform (>= 1.1)
-  - GoogleAppMeasurement (8.0.0):
-    - GoogleAppMeasurement/AdIdSupport (= 8.0.0)
+  - GoogleAppMeasurement (8.2.0):
+    - GoogleAppMeasurement/AdIdSupport (= 8.2.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 7.4)
     - GoogleUtilities/MethodSwizzler (~> 7.4)
     - GoogleUtilities/Network (~> 7.4)
     - "GoogleUtilities/NSData+zlib (~> 7.4)"
     - nanopb (~> 2.30908.0)
-  - GoogleAppMeasurement/AdIdSupport (8.0.0):
+  - GoogleAppMeasurement/AdIdSupport (8.2.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 7.4)
     - GoogleUtilities/MethodSwizzler (~> 7.4)
     - GoogleUtilities/Network (~> 7.4)
     - "GoogleUtilities/NSData+zlib (~> 7.4)"
     - nanopb (~> 2.30908.0)
-  - GoogleMobileAdsMediationFluct (6.13.4):
+  - GoogleMobileAdsMediationFluct (6.13.8):
     - FluctSDK (>= 6.12.1)
     - Google-Mobile-Ads-SDK (>= 8.1.0)
-  - GoogleMobileAdsMediationMoPub (5.16.2.0):
-    - Google-Mobile-Ads-SDK (>= 8.2.0)
-    - mopub-ios-sdk (= 5.16.2)
+  - GoogleMobileAdsMediationMoPub (5.17.0.0):
+    - Google-Mobile-Ads-SDK (~> 8.0)
+    - mopub-ios-sdk (= 5.17.0)
   - GoogleUserMessagingPlatform (2.0.0)
   - GoogleUtilities/AppDelegateSwizzler (7.4.1):
     - GoogleUtilities/Environment
@@ -40,13 +40,13 @@ PODS:
   - "GoogleUtilities/NSData+zlib (7.4.1)"
   - GoogleUtilities/Reachability (7.4.1):
     - GoogleUtilities/Logger
-  - mopub-ios-sdk (5.16.2):
-    - mopub-ios-sdk/MoPubSDK (= 5.16.2)
-  - mopub-ios-sdk/Core (5.16.2)
-  - mopub-ios-sdk/MoPubSDK (5.16.2):
+  - mopub-ios-sdk (5.17.0):
+    - mopub-ios-sdk/MoPubSDK (= 5.17.0)
+  - mopub-ios-sdk/Core (5.17.0)
+  - mopub-ios-sdk/MoPubSDK (5.17.0):
     - mopub-ios-sdk/Core
     - mopub-ios-sdk/NativeAds
-  - mopub-ios-sdk/NativeAds (5.16.2):
+  - mopub-ios-sdk/NativeAds (5.17.0):
     - mopub-ios-sdk/Core
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
@@ -74,14 +74,14 @@ SPEC REPOS:
     - PromisesObjC
 
 SPEC CHECKSUMS:
-  FluctSDK: 1360ff53387593521c2f5b9d4a1fcc5c43e6db4b
-  Google-Mobile-Ads-SDK: 6f5c41bf73db1656e5b203ba9c31e3d0899a128d
-  GoogleAppMeasurement: c6bbc9753d046b5456dd4f940057fbad2c28419e
-  GoogleMobileAdsMediationFluct: 21332e1b4e998e70f2722529a070586b50bb6430
-  GoogleMobileAdsMediationMoPub: b565583c96b600e204496c037eb1fff294240490
+  FluctSDK: c834029d514f9a47eca5639389cefce731e942bd
+  Google-Mobile-Ads-SDK: 0d6e2e065c4efe9836bca3fbd6ff9ef0bca073c2
+  GoogleAppMeasurement: b52eafc9dff542d580700e708216568bd2fbf168
+  GoogleMobileAdsMediationFluct: ab1e7c9dd3ce32728ab18d77958c5c5f69d1ee3f
+  GoogleMobileAdsMediationMoPub: 5c17c4e8553e1aa46376e08ac3a9f3ccf8f62698
   GoogleUserMessagingPlatform: ab890ce5f6620f293a21b6bdd82e416a2c73aeca
   GoogleUtilities: f8a43108b38a68eebe8b3540e1f4f2d28843ce20
-  mopub-ios-sdk: ce5aa12abe59d42cb8866b1297bdff7b6a42e273
+  mopub-ios-sdk: 36d322902674b79b0560a1cb8d15af0548d364ea
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
 

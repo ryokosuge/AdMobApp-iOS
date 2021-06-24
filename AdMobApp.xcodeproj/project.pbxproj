@@ -101,15 +101,15 @@
 		75D44B21240E595E00319543 /* AdMobApp */ = {
 			isa = PBXGroup;
 			children = (
-				752D33DD240F746C0007B63C /* Segue */,
-				75D44B36240E5C4E00319543 /* ViewControllers */,
+				75D44B30240E595F00319543 /* Info.plist */,
 				75D44B22240E595E00319543 /* AppDelegate.swift */,
 				75D44B3A240E5CF000319543 /* Consts.swift */,
 				75D44B24240E595E00319543 /* SceneDelegate.swift */,
-				75D44B28240E595E00319543 /* Main.storyboard */,
 				75D44B2B240E595F00319543 /* Assets.xcassets */,
 				75D44B2D240E595F00319543 /* LaunchScreen.storyboard */,
-				75D44B30240E595F00319543 /* Info.plist */,
+				75D44B28240E595E00319543 /* Main.storyboard */,
+				752D33DD240F746C0007B63C /* Segue */,
+				75D44B36240E5C4E00319543 /* ViewControllers */,
 			);
 			path = AdMobApp;
 			sourceTree = "<group>";
